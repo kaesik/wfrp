@@ -14,7 +14,5 @@ class WarhammerApp(App):
         self.manager = MyScreenManager()
         return self.manager
 
-    
-
 
 WarhammerApp().run()
