@@ -1,0 +1,71 @@
+<Losowanie@TabbedPanel>:
+    do_default_tab: False
+    TabbedPanelItem:
+        text: "Zepsucie Fizyczne"
+        MutationPhysical:
+    TabbedPanelItem:
+        text: "Zepsucie Psychiczne"
+        MutationMental:
+    TabbedPanelItem:
+        text: "Zepsucie Rozszerzone"
+        MutationAdvanced:
+
+<MutationPhysical>:
+    cols: 3
+
+    Button:
+        size_hint: .2, 1
+        text: "Losuj"
+        on_press: root.on_button_click_random()
+
+    BoxLayout:
+        orientation: "vertical"
+        spacing: "5dp"
+        Label:
+            text: root.description
+            font_name: "fonts/Minecraftia-Regular.ttf"
+            font_size: "30dp"
+        Label:
+            text: root.effect
+            font_name: "fonts/Minecraftia-Regular.ttf"
+            font_size: "20dp"
+
+<MutationMental>:
+    cols: 3
+
+    Button:
+        size_hint: .2, 1
+        text: "Losuj"
+        on_press: root.on_button_click_random()
+
+    BoxLayout:
+        orientation: "vertical"
+        spacing: "5dp"
+        Label:
+            text: root.description
+            font_name: "fonts/Minecraftia-Regular.ttf"
+            font_size: "30dp"
+        Label:
+            text: root.effect
+            font_name: "fonts/Minecraftia-Regular.ttf"
+            font_size: "20dp"
+
+<MutationAdvanced>:
+    cols: 3
+
+    Button:
+        size_hint: .2, 1
+        text: "Losuj"
+        on_press: root.on_button_click_random()
+
+    BoxLayout:
+        orientation: "vertical"
+        spacing: "5dp"
+        Label:
+            text: root.description
+            font_name: "fonts/Minecraftia-Regular.ttf"
+            font_size: "30dp"
+        Label:
+            text: root.effect
+            font_name: "fonts/Minecraftia-Regular.ttf"
+            font_size: "20dp"

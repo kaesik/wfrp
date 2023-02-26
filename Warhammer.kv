@@ -1,0 +1,40 @@
+#:import losowanie losowanie
+#:import bestiary bestiary
+#:import tworzenie_postaci tworzenie_postaci
+#:import navigation_screen_manager navigation_screen_manager
+#:import boxlayout_with_actionbar boxlayout_with_actionbar
+
+<MainMenu@BoxLayout>:
+    orientation: "vertical"
+    Button:
+        text: "Tworzenie Postaci"
+        on_press: app.manager.push("TworzeniePostaci")
+    Button:
+        text: "Losowanie"
+        on_press: app.manager.push("Losowanie")
+    Button:
+        text: "Bestiary"
+        on_press: app.manager.push("Bestiary")
+
+<MyScreenManager>:
+    Screen:
+        name: "MainMenu"
+        MainMenu:
+
+    Screen:
+        name: "TworzeniePostaci"
+        BoxLayoutWithActionBar:
+            title: "Tworzenie Postaci"
+            TworzeniePostaci:
+
+    Screen:
+        name: "Losowanie"
+        BoxLayoutWithActionBar:
+            title: "Losowanie"
+            Losowanie:
+
+    Screen:
+        name: "Bestiary"
+        BoxLayoutWithActionBar:
+            title: "Bestiary"
+            Bestiary:
